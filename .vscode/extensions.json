@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "octref.vetur",
+    "eamodio.gitlens",
+    "mikestead.dotenv",
+    "mrmlnc.vscode-attrs-sorter",
+    "wayou.vscode-todo-highlight",
+    "antfu.i18n-ally",
+    "will-stone.plastic",
+    "vscode-icons-team.vscode-icons",
+    "k--kato.intellij-idea-keybindings"
+  ]
+}

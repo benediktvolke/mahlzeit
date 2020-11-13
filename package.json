@@ -1,0 +1,57 @@
+{
+  "name": "@benediktvolke/mahlzeit",
+  "version": "0.1.0",
+  "productName": "Mahlzeit",
+  "author": {
+    "name": "Benedikt Volke",
+    "url": "https://github.com/benediktvolke"
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings=0 \"./**/*.{js,vue,json}\"",
+    "lint:fix": "eslint --fix --max-warnings=0 \"./**/*.{js,vue,json}\"",
+    "format": "prettier --check \"./**/*.{js,vue,json}\" --ignore-path .eslintignore",
+    "format:fix": "prettier --write \"./**/*.{js,vue,json}\" --ignore-path .eslintignore"
+  },
+  "dependencies": {
+    "@quasar/extras": "1.9.10",
+    "core-js": "3.7.0",
+    "firebase": "8.0.2",
+    "quasar": "1.14.3",
+    "vue-i18n": "8.22.1"
+  },
+  "devDependencies": {
+    "@quasar/app": "2.1.6",
+    "@quasar/quasar-app-extension-dotenv": "1.0.5",
+    "babel-eslint": "10.0.1",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.9.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-json": "2.1.2",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-vue": "6.1.2",
+    "prettier": "2.1.2",
+    "workbox-webpack-plugin": "5.1.4"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "homepage": "https://github.com/benediktvolke/mahlzeit#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benediktvolke/mahlzeit.git"
+  }
+}

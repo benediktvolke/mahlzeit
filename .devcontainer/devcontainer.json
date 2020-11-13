@@ -1,0 +1,32 @@
+{
+  "name": "mahlzeit",
+
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "VARIANT": "14"
+    }
+  },
+
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "octref.vetur",
+    "eamodio.gitlens",
+    "mikestead.dotenv",
+    "mrmlnc.vscode-attrs-sorter",
+    "wayou.vscode-todo-highlight",
+    "antfu.i18n-ally",
+    "will-stone.plastic",
+    "vscode-icons-team.vscode-icons",
+    "k--kato.intellij-idea-keybindings"
+  ],
+
+  "forwardPorts": [8080],
+
+  "postCreateCommand": "npm ci && cp .env.example .env",
+
+  "remoteUser": "node"
+}

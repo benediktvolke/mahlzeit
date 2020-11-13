@@ -1,0 +1,73 @@
+name: Code Quality Checks 🔬
+
+on:
+  pull_request:
+    branches:
+      - master
+
+  push:
+    branches:
+      - master
+
+jobs:
+  lint:
+    name: Lint 🔍
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ✈️
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x ⚙️
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install Dependencies 🔧
+        run: npm ci
+
+      - name: Run lint 🔍
+        run: npm run lint
+
+  format:
+    name: Format 🔍
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ✈️
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x ⚙️
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install Dependencies 🔧
+        run: npm ci
+
+      - name: Run format 🔍
+        run: npm run format
+
+  build:
+    name: Build PWA 🛠️
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ✈️
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x ⚙️
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install Dependencies 🔧
+        run: |
+          npm install -g @quasar/cli
+          npm ci
+
+      - name: Build PWA 🛠️
+        run: quasar build -m pwa

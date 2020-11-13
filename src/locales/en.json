@@ -1,0 +1,32 @@
+{
+  "mahlzeit": "Mahlzeit",
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "back-to-login": "Back to login",
+    "create-account": "Create an account",
+    "signup": "Sign up",
+    "forgot-password": "Forgot password?",
+    "reset-password": "Reset your password",
+    "reset-password-success": "Success! Check your email for a reset link.",
+    "reset-password-desc": "Enter your email to reset your password",
+    "reset-password-submit": "Reset password"
+  },
+  "user": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password"
+  },
+  "firebase-errors": {
+    "auth/invalid-email": "The email address is not valid!",
+    "auth/user-disabled": "Your account has been disabled!",
+    "auth/user-not-found": "There is no user with this email!",
+    "auth/wrong-password": "Password is invalid!",
+    "auth/email-already-in-use": "There already exists an account with the given email address!",
+    "auth/weak-password": "The password is not strong enough!",
+    "auth/operation-not-allowed": "Email/password accounts are not enabled!",
+    "unknown": "Unknown Error: {code}"
+  },
+  "update": "Update",
+  "update-available": "An update is available"
+}
